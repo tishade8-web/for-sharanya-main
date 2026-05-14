@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday my Sharanya 🎂</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: linear-gradient(135deg, #ffdde1, #ee9ca7); 
+            color: #fff; 
+            text-align: center; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container { padding: 40px 20px; max-width: 600px; }
+        h1 { font-size: 45px; animation: fadeIn 2s ease-in-out; text-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        
+        nav { margin-bottom: 30px; }
+        button { 
+            padding: 12px 25px; 
+            margin: 5px; 
+            border: none; 
+            border-radius: 25px; 
+            background: white; 
+            color: #ee9ca7; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        button:hover { transform: scale(1.1); background: #fff0f2; }
+        
+        .section { display: none; animation: fadeIn 0.8s ease-in-out; }
+        .active { display: block; }
+        
+        .card { 
+            background: rgba(255, 255, 255, 0.25); 
+            backdrop-filter: blur(10px);
+            padding: 30px; 
+            border-radius: 30px; 
+            border: 1px solid rgba(255,255,255,0.3);
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        @keyframes fadeIn { from {opacity: 0; transform: translateY(10px);} to {opacity: 1; transform: translateY(0);} }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎉 Happy 17th Birthday sharanya 💖</h1>
+    
+    <nav>
+        <button onclick="showSection('home')">🏠 Home</button>
+        <button onclick="showSection('letter')">💌 Letter</button>
+        <button onclick="showSection('speech')">🎤 Speech</button>
+    </nav>
+
+    <!-- Home Section -->
+    <div id="home" class="section active">
+        <div class="card">
+            <h2>🌸 Welcome</h2>
+            <p>Today is all about YOU, love 💕</p>
+            <p>You turning 23 just makes the world more beautiful ✨</p>
+            <p>Click the buttons above... I made something special for you 🥺💖</p>
+        </div>
+    </div>
+
+    <!-- Letter Section -->
+    <div id="letter" class="section">
+        <div class="card">
+            <h2>💌 A Letter For You</h2>
+            <p>Dear Sharanya,</p>
+            <p>On your 23rd birthday, I just want you to know how special you are. You are not just beautiful on the outside, but your heart, your smile, your vibe… everything about you is just magical. ✨</p>
+            <p>You have this way of making everything brighter, happier, and warmer. Being around you feels like peace and excitement at the same time. 💖</p>
+            <p>I hope this year brings you all the happiness you deserve, all your dreams come true, and you keep shining like the star you are. 🌟</p>
+            <p>Stay the same amazing, gorgeous, and kind person always. The world is lucky to have you. 💕</p>
+            <p><b>Happy Birthday once again, baby 🎂</b></p>
+        </div>
+    </div>
+
+    <!-- Speech Section -->
+    <div id="speech" class="section">
+        <div class="card">
+            <h2>🎤 Birthday Speech</h2>
+            <p>Ladies and Gentlemen… Today we celebrate someone truly special — sharanya 💖</p>
+            <p>A girl who is not only stunning but also kind, fun, and full of life. She has this energy that makes everyone smile. 😊</p>
+            <p>Turning 23rd is not just about age — it's about growing into someone even more amazing. And honestly… she’s already incredible. ✨</p>
+            <p>So let’s celebrate her, her smile, her dreams, and everything that makes her unique! 🎉</p>
+            <p><b>Happy Birthday sharanya 💕</b></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(sec => sec.classList.remove('active'));
+        
+        // Show the clicked section
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
